@@ -6,7 +6,6 @@ function Screen() {
   const data = useSelector((state) => state.temperature);
   const { data: currentData, status, error, symbol } = data;
   if (status === "loading") return <h1>Loading........</h1>;
-  if (error) return <h1>Error........</h1>;
 
   return (
     <div className={styles.screen}>
